@@ -51,3 +51,9 @@ Total_Trans_Ct Num Total Transaction Count (Last 12 months)
 Total_Ct_Chng_Q4_Q1 Num Change in Transaction Count (Q4 over Q1)
 
 Avg_Utilization_Ratio Num Average Card Utilization Ratio
+
+Below is a ROC Graph showing the results of our model.
+
+The ROC Graph shows us the capability of a model to distinguish between the classes based on the AUC Mean score. The orange line represents the ROC curve of a random classifier while a good classifier tries to remain as far away from that line as possible. As shown in the graph below, the fine-tuned Logistic Regression model showcased a higher AUC score.
+
+
