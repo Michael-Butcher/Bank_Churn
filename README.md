@@ -52,6 +52,14 @@ Total_Ct_Chng_Q4_Q1 Num Change in Transaction Count (Q4 over Q1)
 
 Avg_Utilization_Ratio Num Average Card Utilization Ratio
 
+The results of our model are at 96% accuracy.
+
+Visulize the results of the confusion matrix:
+
+The Confusion matrix indicates that we have 1680+268 correct predictions and 21+57 incorrect predictions.
+Accuracy rate = number of correct predictions/ total predictions * 100
+Error rate = Number of wrong predictions / total predictions * 100
+We have got an accuracy of 96%; signalling the characteristics of a reasonably good model.
 
 
 cm = confusion_matrix(y_test, y_pred) 
