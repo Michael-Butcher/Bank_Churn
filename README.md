@@ -62,19 +62,3 @@ Error rate = Number of wrong predictions / total predictions * 100
 We have got an accuracy of 96%; signalling the characteristics of a reasonably good model.
 
 
-cm = confusion_matrix(y_test, y_pred) 
-df_cm = pd.DataFrame(cm, index = (0, 1), columns = (0, 1))
-plt.figure(figsize = (28,20))
-fig, ax = plt.subplots()
-sn.set(font_scale=1.4)
-sn.heatmap(df_cm, annot=True, fmt='g')#,cmap="YlGnBu" 
-           
-class_names=[0,1]
-tick_marks = np.arange(len(class_names))
-plt.tight_layout()
-plt.title('Confusion matrix\n', y=1.1)
-plt.xticks(tick_marks, class_names)
-plt.yticks(tick_marks, class_names)
-ax.xaxis.set_label_position("top")
-plt.ylabel('Actual label\n')
-plt.xlabel('Predicted label\n')
